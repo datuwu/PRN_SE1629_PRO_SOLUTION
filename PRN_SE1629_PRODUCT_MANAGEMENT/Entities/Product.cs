@@ -8,9 +8,11 @@ public class Product
     public string Desc { get; set; }
     public double UnitPrice { get; set; }
     public int Quantity { get; set; }
-
+    public readonly string NameOfProvide;
     //Constructor
-    public Product() { }
+    public Product() {
+        NameOfProvide = "FPT Edu";
+    }
 
     public Product(int id, string productName, string desc, double unitPrice, int quantity)
     {
